@@ -1,4 +1,6 @@
-<?php namespace Yangqi\Htmldom;
+<?php
+
+namespace Yangqi\Htmldom;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +20,9 @@ class HtmldomServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('yangqi/htmldom');
+		if (method_exists($this, 'package')) {
+	       		$this->package('yangqi/htmldom');
+		}
 	}
 
 	/**
