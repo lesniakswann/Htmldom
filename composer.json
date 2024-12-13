@@ -14,8 +14,8 @@
         "php": ">=5.3.0"
     },
     "autoload": {
-        "psr-0": {
-            "Yangqi\\Htmldom": "src/"
+        "psr-4": {
+            "Yangqi\\Htmldom\\": "src/Yangqi/Htmldom/"
         }
     },
     "minimum-stability": "dev"
